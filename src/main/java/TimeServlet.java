@@ -69,6 +69,7 @@ public class TimeServlet extends HttpServlet {
 		 * 入力された時間で現在時間を引いた残り時間を計算
 		 */
 
+		// ミリ秒で計算
 		long d3 = (d2.getTime() - d1.getTime());
 		// longをデータ型に変換
 		Date d4 = new Date(d3 - 9 * 60 * 60 * 1000);
@@ -83,8 +84,8 @@ public class TimeServlet extends HttpServlet {
 		request.setAttribute("afterCalcHour", sdfTime.format(d2));
 		//何時間後かの表示
 		request.setAttribute("num1", num1);
-		// カウントダウン
-		request.setAttribute("d4", sdfTime.format(d4));
+		// カウントダウン用（ミリ秒で渡し）
+		request.setAttribute("d4", d3);
 
 		//出力結果へ
 		RequestDispatcher rd = request.getRequestDispatcher("output.jsp");
