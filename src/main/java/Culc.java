@@ -38,12 +38,18 @@ public class Culc extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		// input2.htmlより入力された値をget
-		request.getParameter("one");
-		request.getParameter("twice");
-		request.getParameter("culc");
+		int one  =Integer.parseInt(request.getParameter("one"));
+		int twice  =Integer.parseInt(request.getParameter("twice"));
+		String culc= request.getParameter("culc");
+		
+		request.setAttribute("one", one);
+		request.setAttribute("twice", twice);
+		request.setAttribute("culc", culc);
 		
 		
-		request.setAttribute("one" one)
+
+		
+		
 		
 		RequestDispatcher rd = request.getRequestDispatcher("output2.jsp");
 		rd.forward(request, response);
