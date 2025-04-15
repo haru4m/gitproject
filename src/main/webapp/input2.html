@@ -10,31 +10,34 @@
 </title>
 
 <body>
-	<h1>数値計算</h1>
+	<div>
+		<h1 name="title">数値計算</h1>
+	</div>
 
+	<div>
+		<!--Culcサーブレットへ計算を送信するフォーム-->
+		<form action="Culc" method="post">
 
-	<!--Culcサーブレットへ計算を送信するフォーム-->
-	<form action="Culc" method="post">
+			<!--１つ目の入力。 0～1000までの数値を入力-->
+			<p><input type="number" max="1000" min="0" name="one" placeholder="空欄です"></p>
+			<p>
 
-		<!--１つ目の入力。 0～1000までの数値を入力-->
-		<p><input type="number" max="1000" min="0" name="one" placeholder="空欄です"></p>
-		<p>
-
-			<!-- 四則演算を選択-->
-			<select id="culc" name="culc1">
-				<option value="+">＋</option>
-				<option value="-">－</option>
-				<option value="*">×</option>
-				<option value="/">÷</option>
-			</select>
-		</p>
-		<p>
-			<!--　２つめの入力 0～1000までの数値を入力-->
-			<input type="number" max="1000" min="0" placeholder="空欄です" name="twice">
-		</p>
-		<!--送信ボタン-->
-		<input type="submit" value="計算開始">
-	</form>
+				<!-- 四則演算を選択-->
+				<select id="culc" name="culc1">
+					<option value="+">＋</option>
+					<option value="-">－</option>
+					<option value="*">×</option>
+					<option value="/">÷</option>
+				</select>
+			</p>
+			<p>
+				<!--　２つめの入力 0～1000までの数値を入力-->
+				<input type="number" max="1000" min="0" placeholder="空欄です" name="twice">
+			</p>
+			<!--送信ボタン-->
+			<input type="submit" value="計算開始">
+		</form>
+	</div>
 
 </body>
 

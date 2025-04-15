@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* ページ全体　*/
-h1{
+title{
 	text-align: center;
 	margin-top:0px;
 	color: #333;
