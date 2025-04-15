@@ -3,19 +3,23 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>課題2 02
-	</title>
+	<link rel="stylesheet" type="text/css" href="input2.css">
+
 </head>
+<title>課題2 02
+</title>
 
 <body>
-	
+	<h1>数値計算</h1>
+
+
 	<!--Culcサーブレットへ計算を送信するフォーム-->
 	<form action="Culc" method="post">
-		
+
 		<!--１つ目の入力。 0～1000までの数値を入力-->
-		<p><input type="number" max="1000" min="0" name="one"placeholder="空欄です"></p>
+		<p><input type="number" max="1000" min="0" name="one" placeholder="空欄です"></p>
 		<p>
-			
+
 			<!-- 四則演算を選択-->
 			<select id="culc" name="culc1">
 				<option value="+">＋</option>
@@ -33,4 +37,5 @@
 	</form>
 
 </body>
+
 </html>

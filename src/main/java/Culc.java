@@ -29,7 +29,7 @@ public class Culc extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		RequestDispatcher rd = request.getRequestDispatcher("imput2.html");
+		RequestDispatcher rd = request.getRequestDispatcher("input2.html");
 		rd.forward(request, response);
 	}
 
