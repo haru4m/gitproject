@@ -4,38 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Output2 (計算結果)</title>
 </head>
 <body>
-	<script>
-int i = <%=request.getParameter("one")%>
-int x = <%=request.getParameter("twice")%>
-String z = <%=request.getParameter("culc")%>
-int a = 0;
-
-
-switch(z){
-case "add":
-	a = i + x ;
-	break;
-case "minus":
-	a = i - x;
-	break;
-case "multiply":
-	a= i * x;
-	break;
-case "division":
-	a = i / x;
-}
-
-
-</script>
-<p>計算結果</p>
-<p><%=request.getParameter("one") %></p>
-<p><%=request.getParameter("culc") %></p>
-<p><%=request.getParameter("twice") %></p>
-
-
-
+	<p>計算結果</p>
+	<!-- （計算結果 or エラー）を取得 -->
+	<p1><%=request.getAttribute("ans")%></p>
+	<p3> <!-- 最初のページに戻るためのボタン -->
+	<form action="Culc" method="get">
+		<input type="submit" value="戻る">
+	</form>
 </body>
 </html>
