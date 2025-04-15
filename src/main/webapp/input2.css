@@ -10,7 +10,6 @@ body {
 	background-color: bisque;
 	font-family: 'helvetica', sans-serif;
 	height:100vh;
-	display: flex;
 	justify-content: center;
 	/* 横方向の中央ぞろえ */
 	align-items: center;}
